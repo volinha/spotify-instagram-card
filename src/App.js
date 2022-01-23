@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import LyricsCard from "./components/LyricsCard/LyricsCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}
+    >
+      <LyricsCard 
+        songname="Café Amargo"
+        artist="Supercombo"
+        firstline="Lento outra vez mal"
+        secondline="Vi o trem passar" 
+        thirdline="Já foram dois lá vai o três"
+        fourthline="Decido caminhar com sorte eu chego às seis"
+        color="#A9800A"
+      />
     </div>
   );
 }
