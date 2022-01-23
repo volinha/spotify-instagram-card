@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import LyricsCard from "./components/LyricsCard/LyricsCard";
 
+import data from "./data";
+
 function App() {
   return (
     <div
@@ -10,18 +12,10 @@ function App() {
         height: "100vh",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
       }}
     >
-      <LyricsCard 
-        songname="Café Amargo"
-        artist="Supercombo"
-        firstline="Lento outra vez mal"
-        secondline="Vi o trem passar" 
-        thirdline="Já foram dois lá vai o três"
-        fourthline="Decido caminhar com sorte eu chego às seis"
-        color="#A9800A"
-      />
+      <LyricsCard data={data} />
     </div>
   );
 }
