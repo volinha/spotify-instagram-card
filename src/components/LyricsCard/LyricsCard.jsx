@@ -192,6 +192,7 @@ const LyricsCard = ({ data }) => {
   const handleChangeSong = () => {
     let dimSongs = data.length;
     setLyric(0);
+    setSelected(0);
     if (song === dimSongs - 1) return setSong(0);
     return setSong(song + 1);
   };
